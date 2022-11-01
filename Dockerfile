@@ -3,11 +3,11 @@ MAINTAINER ankitesh@gmail.com
 RUN yum install -y httpd \
         zip \
         unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page282/selo.zip
 WORKDIR /var/www/html
-RUN unzip kindle.zip
-RUN cp -rvf markups-kindle/* .
-RUN rm -rf __MACOSX markups-kindle kindle.zip
+RUN unzip selo.zip
+RUN cp -rvf selo-html/* .
+RUN rm -rf selo-html selo.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
