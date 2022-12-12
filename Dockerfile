@@ -10,4 +10,4 @@ RUN cp -rvf coffee-shop-html-template/* .
 RUN rm -rf coffee-shop-html-template koppee.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
-
+#This is updated
